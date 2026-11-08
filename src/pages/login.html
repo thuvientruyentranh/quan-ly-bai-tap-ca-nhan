@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Đăng Nhập - EduTask</title>
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+
+<body class="auth-body">
+
+    <div class="auth-container">
+        <div class="auth-card">
+
+            <h2>Đăng Nhập Hệ Thống</h2>
+
+            <form id="login-form">
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Nhập email của bạn..."
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Nhập mật khẩu..."
+                        required
+                    >
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-block"
+                    id="login-btn"
+                >
+                    Đăng Nhập
+                </button>
+
+                <p id="login-message" role="status"></p>
+
+            </form>
+
+            <p class="auth-redirect">
+                Chưa có tài khoản?
+                <a href="register.html">Đăng ký ngay</a>
+            </p>
+
+        </div>
+    </div>
+
+    <script type="module" src="../js/login.js"></script>
+
+</body>
+</html>
